@@ -247,9 +247,10 @@ namespace CalculadoraCientifica
             this.btn_Mas.Name = "btn_Mas";
             this.btn_Mas.Size = new System.Drawing.Size(37, 34);
             this.btn_Mas.TabIndex = 16;
+            this.btn_Mas.Tag = "+";
             this.btn_Mas.Text = "+";
             this.btn_Mas.UseVisualStyleBackColor = true;
-            this.btn_Mas.Click += new System.EventHandler(this.btn_Mas_Click);
+            this.btn_Mas.Click += new System.EventHandler(this.DetectarOperacion);
             // 
             // btn_Menos
             // 
@@ -258,9 +259,10 @@ namespace CalculadoraCientifica
             this.btn_Menos.Name = "btn_Menos";
             this.btn_Menos.Size = new System.Drawing.Size(37, 34);
             this.btn_Menos.TabIndex = 15;
+            this.btn_Menos.Tag = "-";
             this.btn_Menos.Text = "-";
             this.btn_Menos.UseVisualStyleBackColor = true;
-            this.btn_Menos.Click += new System.EventHandler(this.btn_Menos_Click);
+            this.btn_Menos.Click += new System.EventHandler(this.DetectarOperacion);
             // 
             // btn_Divi
             // 
@@ -269,9 +271,10 @@ namespace CalculadoraCientifica
             this.btn_Divi.Name = "btn_Divi";
             this.btn_Divi.Size = new System.Drawing.Size(37, 34);
             this.btn_Divi.TabIndex = 14;
+            this.btn_Divi.Tag = "/";
             this.btn_Divi.Text = "/";
             this.btn_Divi.UseVisualStyleBackColor = true;
-            this.btn_Divi.Click += new System.EventHandler(this.btn_Divi_Click);
+            this.btn_Divi.Click += new System.EventHandler(this.DetectarOperacion);
             // 
             // btn_Multi
             // 
@@ -280,9 +283,10 @@ namespace CalculadoraCientifica
             this.btn_Multi.Name = "btn_Multi";
             this.btn_Multi.Size = new System.Drawing.Size(37, 34);
             this.btn_Multi.TabIndex = 13;
-            this.btn_Multi.Text = "X";
+            this.btn_Multi.Tag = "*";
+            this.btn_Multi.Text = "x";
             this.btn_Multi.UseVisualStyleBackColor = true;
-            this.btn_Multi.Click += new System.EventHandler(this.btn_Multi_Click);
+            this.btn_Multi.Click += new System.EventHandler(this.DetectarOperacion);
             // 
             // panel3
             // 
@@ -302,9 +306,10 @@ namespace CalculadoraCientifica
             this.btn_potencia.Name = "btn_potencia";
             this.btn_potencia.Size = new System.Drawing.Size(37, 34);
             this.btn_potencia.TabIndex = 20;
+            this.btn_potencia.Tag = "²";
             this.btn_potencia.Text = "x²";
             this.btn_potencia.UseVisualStyleBackColor = true;
-            this.btn_potencia.Click += new System.EventHandler(this.btn_potencia_Click);
+            this.btn_potencia.Click += new System.EventHandler(this.DetectarOperacion);
             // 
             // btn_Clear
             // 
@@ -335,9 +340,10 @@ namespace CalculadoraCientifica
             this.btn_Factorial.Name = "btn_Factorial";
             this.btn_Factorial.Size = new System.Drawing.Size(37, 34);
             this.btn_Factorial.TabIndex = 17;
+            this.btn_Factorial.Tag = "!";
             this.btn_Factorial.Text = "x!";
             this.btn_Factorial.UseVisualStyleBackColor = true;
-            this.btn_Factorial.Click += new System.EventHandler(this.btn_Factorial_Click);
+            this.btn_Factorial.Click += new System.EventHandler(this.DetectarOperacion);
             // 
             // btn_Up
             // 
